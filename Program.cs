@@ -7,12 +7,13 @@ namespace DSA
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            List<int> list = new() { 1, 2, 3, 4, 5, 6, 7, 8, 10 };
-            RecursiveBinarySeearch s = new();
-            bool result = s.RecursiveBinaryNumber(list, 8);
-            Verify(result);
-
+            LinkedList l = new LinkedList();
+            Node N1 = new(10);
+            l._head = N1;
+            l.Add(5);
+            l.Add(18);
+            Console.WriteLine(l.InsertAt(1, 50)._data);
+            Console.WriteLine(l.Search(50));
         }
 
         public static void Verify(bool index)
