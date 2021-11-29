@@ -76,7 +76,15 @@ namespace DSA
                 if(leftHead==null)
                 {
                     current.nextNode = rightHead;
+                    //call next on right to set loop condition to false
                     rightHead = rightHead.nextNode;
+                }
+                //if the head node of right is null we past the tail
+                //add the taile node from left to merged linked list
+                else if(rightHead == null){
+                    current.nextNode = leftHead;
+                    //call next on right to set loop condition to false
+                    leftHead = leftHead.nextNode;
                 }
             }
         }
