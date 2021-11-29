@@ -114,5 +114,23 @@ namespace DSA
             return null;
         }
 
+        public Node NodeAtIndex(int index)
+        {
+            if (index == 0)
+                return _head;
+            else
+            {
+                Node current = _head;
+                var position = 0;
+
+                while (position < index)
+                {
+                    current = current.nextNode;
+                    position++;
+                }
+                return current;
+            }
+        }
+
     }
 }
