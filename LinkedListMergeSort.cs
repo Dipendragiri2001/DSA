@@ -10,6 +10,7 @@ namespace DSA
     {
         public LinkedList MergeSort(LinkedList linkedList)
         {
+            // big o (kn logn)
             //Sorts a linked list in ascending order
             //recursively divide linked list into sublist containing a single node
             //repeatedly merge the sublists to produce sorted sublists until one remains
@@ -32,6 +33,7 @@ namespace DSA
 
         public (LinkedList leftHalf,LinkedList rightHalf) Split(LinkedList linkedList)
         {
+            //takes bigO(k logn)
             //divide the unsorted list at midpoint into sublist
             if(linkedList == null || linkedList._head == null)
             {
@@ -54,8 +56,9 @@ namespace DSA
 
         }
 
-        public void Merge(LinkedList left,LinkedList right)
+        public LinkedList Merge(LinkedList left,LinkedList right)
         {
+            // runs in linear time
             //merge two linked list sorting by data in nodes
             //returns new merged list
 
@@ -86,7 +89,31 @@ namespace DSA
                     //call next on right to set loop condition to false
                     leftHead = leftHead.nextNode;
                 }
+                else{
+                    // not a either taile node 
+                    // obtain node data to perform comparison operations
+                    var leftData = leftHead._data;
+                    var rightData = rightHead._data;
+                    if(leftData< rightData)
+                    {
+                        current.nextNode = leftHead;
+                        leftHead= leftHead.nextNode;
+                    }
+                    //if data on left is greater than right set current to right node
+                    else{
+                        current.nextNode = rightHead;
+                        rightHead = rightHead.nextNode;
+                    }
+
+                }
+                // move current to next node
+                current = current.nextNode;
+
             }
+            //discard fake head and set first merge node as head
+            var _head = merged._head.nextNode;
+            merged._head = _head;
+            return merged;
         }
     }
 }

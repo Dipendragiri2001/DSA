@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DSA\\DSA.csproj": {}
+    "C:\\Users\\uSer\\Desktop\\DSA\\DSA\\DSA.csproj": {}
   },
   "projects": {
-    "D:\\DSA\\DSA.csproj": {
+    "C:\\Users\\uSer\\Desktop\\DSA\\DSA\\DSA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DSA\\DSA.csproj",
+        "projectUniqueName": "C:\\Users\\uSer\\Desktop\\DSA\\DSA\\DSA.csproj",
         "projectName": "DSA",
-        "projectPath": "D:\\DSA\\DSA.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\DSA\\obj\\",
+        "projectPath": "C:\\Users\\uSer\\Desktop\\DSA\\DSA\\DSA.csproj",
+        "packagesPath": "C:\\Users\\uSer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\uSer\\Desktop\\DSA\\DSA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\uSer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
